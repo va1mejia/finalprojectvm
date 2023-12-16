@@ -1,0 +1,79 @@
+<title>History</title>
+<!--The stuff below the title does important work to tell browsers what this page should look like on different screens-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Next is a link to the cascading style sheet or CSS. Web designers use a cascading stylesheet CSS to add styling to a website. Designers do this by "calling" a <div class> in HTML and defining the class attributes on the style sheet. Doing so saves time and results in less code. On the style.css page you'll find attributes relating font, text size, image size, among other details.-->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+<!--Now we will start working in the body of the document. The body holds all of the code and content that will appear as a visual for our audience.-->
+
+<!--Designers refer to this next section as a "Hero Image." The hero image is styled on the style.css page by calling a "class." To replace the hero image, simply place a .jpg file in the same file folder (directory) as this project and name it "hero.jpg." Alternatively, if you are working with a .png, you will need to open the style.css file using your text editor, find the "hero-image" class and change the file type from ".jpg" to ".png."" Browsers will only work with .jpg, .jpeg, or .png images. Since hero images need to stretch across the screen, typically you will want to select an image 1200px in width to allow quick load time yet avoid pixilation.-->
+
+
+<div class="hero-image">
+  <div class="hero-text">
+      <h1>History</h1>
+      <h2>The creation of Greek Life</h2>
+  </div>
+</div>
+
+
+<!--We'll use this first section to discuss where you are right now. Where do you go to school and what courses are you taking/enjoying. What majors/minors/certificates are you pursuing? Has this changed? Why? Replace the content between <h3> and </h3> that says "Lorem ipsum" etc -->
+
+
+<!--Fuego programs sometimes use "in-line styling" to provide quick fixes to content design. In the above case, you could change "left" to "right" or "center" depending on your specific design needs. That said, left align is usually best practice for improving readability.-->
+<div class="textblock" style="text-align: left">
+  <h2>The History of Sororities and Greek Life. </h2>
+  <h3>Fraternities and sororities have a long and complex history, and their development spans several centuries. The timeline of the creation of fraternities and sororities is as follows:
+
+    Late 18th Century:
+    
+    The first social fraternity, Phi Beta Kappa, was founded on December 5, 1776, at the College of William & Mary in Williamsburg, Virginia. Phi Beta Kappa initially operated as a secret literary society before evolving into a more traditional honor society.
+    Early 19th Century:
+    
+    The Greek-letter fraternity model was further developed with the establishment of Kappa Alpha Society in 1825 at Union College in Schenectady, New York. It is considered the first modern social fraternity.
+    Sigma Phi and Delta Phi were also founded in 1827 at Union College, contributing to the growth of the fraternity movement.
+    Mid-19th Century:
+    
+    The concept of fraternities spread to other colleges and universities, and a number of fraternities were established during this period. Many early fraternities were founded in response to a desire for camaraderie, support, and shared values among college students.
+    Late 19th Century:
+    
+    Sororities began to emerge in the late 19th century, modeled after the fraternity system. The first sorority, Kappa Alpha Theta, was founded on January 27, 1870, at DePauw University in Greencastle, Indiana.
+    Sigma Kappa, the first non-sectarian sorority, was founded in 1874 at Colby College in Waterville, Maine.
+    Early 20th Century:
+    
+    Fraternities and sororities continued to grow in number and popularity throughout the early 20th century. The structure and organization of Greek life became more standardized.
+    Mid to Late 20th Century:
+    
+    Fraternities and sororities faced challenges and changes during the mid to late 20th century, including issues related to hazing, discrimination, and evolving social norms.
+    Some Greek organizations embraced co-education, allowing both men and women to join, while others remained single-gender.
+    21st Century:
+    
+    Fraternities and sororities continue to play a significant role in the social and academic life of many colleges and universities.
+    Issues such as hazing, alcohol abuse, and campus safety have prompted increased scrutiny and calls for reform within the Greek system.
+    Throughout their history, fraternities and sororities have evolved to reflect changing societal norms and values, and they continue to be an integral part of the college experience for many students. Each fraternity and sorority has its own unique history, traditions, and values.
+    
+    Citation: https://books.google.com/books?hl=en&lr=&id=lJ0hFQlKx4oC&oi=fnd&pg=PA7&dq=history+of+sororities+&ots=DQyyZBBDmZ&sig=rhn23OHMNQNJUURJ-B9n_BefTZc#v=onepage&q=history%20of%20sororities&f=false 
+    
+    </h3>
+  </div>
+
+
+  <img src="Beginning.JPG" alt="" class="center-img" style="width:30%;"></img>
+  <img src="Continuehistory.JPG" alt="" class="center-img" style="width:30%;"></img>
+
+      <!-- Button to link back to index.html -->
+      <button onclick="goToHomePage()">Go to Home Page</button>
+
+      <!-- Optional: Add any additional scripts here -->
+      <script>
+          function goToHomePage() {
+              // Redirect to index.html
+              window.location.href = "index.html";
+          }
+      </script>
+  </body>
+  </html>

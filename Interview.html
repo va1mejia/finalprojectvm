@@ -1,0 +1,57 @@
+<!--HTML pages start by calling <!DOCTYPE html> and designating a language.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Next comes the <head> information including the title and all of the important links that make the webtext work. When a browser access your url, it looks first at the index.html document <head> to learn about the names and locations of the other files and assets it will need to assemble your code into a visual display.-->
+
+  <!--Go ahead and fill in the blank in <title>I am...</title> (see just below). The <title> will appear in your document's browser tab-->
+<title>I am...</title>
+<!--The stuff below the title does important work to tell browsers what this page should look like on different screens-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Next is a link to the cascading style sheet or CSS. Web designers use a cascading stylesheet CSS to add styling to a website. Designers do this by "calling" a <div class> in HTML and defining the class attributes on the style sheet. Doing so saves time and results in less code. On the style.css page you'll find attributes relating font, text size, image size, among other details.-->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+<!--Now we will start working in the body of the document. The body holds all of the code and content that will appear as a visual for our audience.-->
+
+<!--Designers refer to this next section as a "Hero Image." The hero image is styled on the style.css page by calling a "class." To replace the hero image, simply place a .jpg file in the same file folder (directory) as this project and name it "hero.jpg." Alternatively, if you are working with a .png, you will need to open the style.css file using your text editor, find the "hero-image" class and change the file type from ".jpg" to ".png."" Browsers will only work with .jpg, .jpeg, or .png images. Since hero images need to stretch across the screen, typically you will want to select an image 1200px in width to allow quick load time yet avoid pixilation.-->
+
+
+<div class="hero-image">
+  <div class="hero-text">
+      <h1>Interview</h1>
+      <h2>Answered by Ella Frank</h2>
+  </div>
+</div>
+<div class="textblock" style="text-align: left">
+    <h2>Ella Frank </h2>
+    <h3>Ella Frank is a sophomore at the University of Pittsburgh and is currently in a sorority. She is in Kappa Kappa Gamma and was initated in the Spring of 2023. Ella is originally from Boston, Massachusetts and has two sibilings. In this interview, Ella will answer the given questions in an open and honest manner.</h3>
+    </div>
+  
+    <div class="col-sm-4">
+      <h3>Interview</h3>
+        <a href="https://youtu.be/q1akdKOEA4A" target="_blank">
+       <div class="hover">
+     <img src="ella.jpg" class="img-responsive" style="width:100%"alt="Image" >
+            </div>
+</a>
+
+</div>
+  </div>
+
+
+      <!-- Button to link back to index.html -->
+      <button onclick="goToHomePage()">Go to Home Page</button>
+
+      <!-- Optional: Add any additional scripts here -->
+      <script>
+          function goToHomePage() {
+              // Redirect to index.html
+              window.location.href = "index.html";
+          }
+      </script>
+  </body>
+  </html>

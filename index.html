@@ -1,0 +1,67 @@
+<!--Welcome to "I am...a Project in Becoming..." Just follow along with comments like this one, and you'll design a really cool webtext that not only introduces you to the rest of the class, but also builds your coding literacy. Refer to the repository README for GitHub publishing help.-->
+
+<!--BTW. You can leave these faded code comments be, or delete them. Programmers and web designers use these comments to better explain what the code is doing for others who may enter the document later. They are but road signs, absent from the larger design-->
+
+<!--HTML pages start by calling <!DOCTYPE html> and designating a language.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Next comes the <head> information including the title and all of the important links that make the webtext work. When a browser access your url, it looks first at the index.html document <head> to learn about the names and locations of the other files and assets it will need to assemble your code into a visual display.-->
+
+  <!--Go ahead and fill in the blank in <title>I am...</title> (see just below). The <title> will appear in your document's browser tab-->
+<title>Inside Sorority Life</title>
+<!--The stuff below the title does important work to tell browsers what this page should look like on different screens-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Next is a link to the cascading style sheet or CSS. Web designers use a cascading stylesheet CSS to add styling to a website. Designers do this by "calling" a <div class> in HTML and defining the class attributes on the style sheet. Doing so saves time and results in less code. On the style.css page you'll find attributes relating font, text size, image size, among other details.-->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+<!--Now we will start working in the body of the document. The body holds all of the code and content that will appear as a visual for our audience.-->
+
+<!--Designers refer to this next section as a "Hero Image." The hero image is styled on the style.css page by calling a "class." To replace the hero image, simply place a .jpg file in the same file folder (directory) as this project and name it "hero.jpg." Alternatively, if you are working with a .png, you will need to open the style.css file using your text editor, find the "hero-image" class and change the file type from ".jpg" to ".png."" Browsers will only work with .jpg, .jpeg, or .png images. Since hero images need to stretch across the screen, typically you will want to select an image 1200px in width to allow quick load time yet avoid pixilation.-->
+
+
+<div class="hero-image">
+  <div class="hero-text">
+      <h1>Inside Sorority Life</h1>
+      <h2>A glance into all things Sorority. </h2>
+  </div>
+</div>
+
+
+
+
+
+    <!-- Buttons to link to other pages -->
+    <button onclick="goToInterviewPage()">Go to Interview Page</button>
+    <button onclick="goToHistoryPage()">Go to History Page</button>
+    <button onclick="goToNegativeHistoryPage()">Go to Negative History Page</button>
+    <button onclick="goToVocabPage()">Go to Vocab Page</button>
+
+    <!-- Optional: Add any additional scripts here -->
+    <script>
+        function goToInterviewPage() {
+            // Redirect to interview.html
+            window.location.href = "interview.html";
+        }
+
+        function goToHistoryPage() {
+            // Redirect to history.html
+            window.location.href = "history.html";
+        }
+
+        function goToNegativeHistoryPage() {
+            // Redirect to negativehistory.html
+            window.location.href = "negativehistory.html";
+        }
+
+        function goToVocabPage() {
+            // Redirect to vocab.html
+            window.location.href = "vocab.html";
+        }
+    </script>
+</body>
+</html>
